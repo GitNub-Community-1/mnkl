@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приглашение</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/6654/6654165.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="src/output.css" rel="stylesheet">
+</head>
+<body class="bg-[#f5f0e6]">
+    <div class="mt-[80px] mx:mt-[35px]">
+        <div data-aos="flip-up"  class="flex justify-center items-center flex-col gap-[20px]">
+            <h1 class="text-[40px] mx:text-[25px] font-serif text-[#573b30] font-medium "  style="transform: scaleY(0.9); letter-spacing: 1px;">ХУДОЙБЕРДИ</h1>
+            <h4 class="text-[20px] text-[#573b30] font-serif " style="letter-spacing: 1px;">&</h4>
+            <h1   class="text-[40px] mx:text-[25px] font-serif text-[#573b30] font-medium "  style="transform: scaleY(0.9); letter-spacing: 1px;">ЖАН ПЕ ЮЙ</h1>
+        </div>
+        <div data-aos="zoom-in" class="flex flex-col justify-center items-center gap-[16px] mt-[20px]">
+            <h1 class="text-[#472d23] text-[20px]" style="transform: scaleY(1.1);">Сизни Никоҳ Тӯйимизга таклиф қиламиз</h1>
+            <h1 class="text-[#472d23] text-[30px]" style="margin-top: 13px;">20 сентября</h1>
+        </div>
+        <div  data-aos = "fade-right" class="flex justify-center mt-[20px]">
+            <img class="w-[530px] h-[340px] mx:w-[350px] mx:h-[230px] rounded-[13px]" src="./phot/7.jpeg" alt="">
+             <!-- <img class="w-[530px] h-[340px] mx:w-[350px] mx:h-[230px] rounded-[13px]" src="./phot/6.jpeg" alt=""> -->
+        </div>
+        <div>
+          <div data-aos="zoom-in">
+            <h1 class="text-[30px] font-serif text-[#472d23] text-center mt-[55px]">Батафсил Маълумот:</h1>
+          </div>
+            <div class="flex justify-center items-center flex-col mt-[18px]">
+            <div data-aos="fade-left" class="flex items-center gap-[13px] px-[20px] w-[550px] h-[70px] mx:h-[60px] mx:w-[390px] bg-[white] rounded-[14px]">
+            <i class="fa-solid fa-location-dot text-[20px] text-red-600"></i>
+            <h1 class="text-[22px] text-[#472d23] font-Ariel">Ресторан «Мехру Мухаббат», Панджикент</h1>
+            </div>
+            <div data-aos="fade-left"  class="flex items-center gap-[13px] px-[20px] w-[550px] h-[70px] mx:h-[60px] mx:w-[390px] bg-[white] rounded-[14px] mt-[10px]">
+                <i class="fa-solid fa-clock text-[20px] text-gray-500"></i>
+                <h1 class="text-[22px] text-[#472d23] font-Ariel">Бошланиш вақти 12:00</h1>
+            </div>
+            <div data-aos="fade-left" class="mt-[20px]">
+                <a href="https://yandex.ru/maps/org/189757974717?si=96x2477x9gwvuqeneqv4hc462m" target="_blank" rel="noopener noreferrer"><h1 class="text-[20px] px-[20px] mt-[10px] rounded-[13px] text-[white] py-[10px] bg-orange-400">Ресторанни харитада курсатиш</h1></a>
+            </div>
+            </div>
+        </div>
+        <div data-aos="zoom-out" class="mt-[60px] flex flex-col justify-center items-center gap-[20px]">
+            <h1 class="text-2xl mx:text-[30px] font-serif text-[#472d23]">Қатнаша олишингизни тасдиқлан:</h1>
+            <div data-aos="flip-up" id="customForm" class="bg-[white] py-[50px] rounded-[15px] px-[80px]">
+                <input  type="text" class="rounded-[13px] px-[10px] py-[7px] ml-[-30px] bg-[#f5f0e6] " placeholder="Ismingiz:" id="name" required><br><br>
+                <label class="mt-[25px] mb-[10px]">Сиз келасизми ?</label><br>
+                <input class="mt-[10px]" type="radio" name="attending" value="Да" required> ✅ Ҳа<br>
+                <input class="mt-[10px]" type="radio" name="attending" value="Нет"> ❌ Йӯқ<br><br>
+                <button id="submitBtn" class="bg-orange-400 rounded-[20px] px-[15px] py-[7px] text-[white]">Юбориш</button>
+            </div>
+
+            <div data-aos="flip-down" id="thankYouMessage" style="display:none; margin-top:20px; font-size:1.2rem; color:#4b3f2f;">
+                ✅ Джавобингиз учун рахмат!
+            </div>
+
+            <!-- <div>
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSck0Xlc0cyTYe06G3lOr2PkRULCcuMr55oWmtd4TPaj4M4Sew/viewform?embedded=true" width="400px" height="500px">Загрузка…</iframe>
+            </div> -->
+        </div>
+        <div  class="bg-[#f0ede8] text-[#4b3f2f] p-6 rounded-xl  shadow-lg max-w-xl mx-auto text-center space-y-4  mt-[50px]">
+      <h2 class="text-[20px] mx:text-[13px] tracking-widest uppercase">To‘yimizgacha yana qoldi:</h2>
+      <div id="countdown" class="text-[34px] mx:text-[19px] font-semibold tracking-wider"></div>
+    </div>
+    </div>
+<script>
+    document.getElementById("submitBtn").addEventListener("click", function() {
+  const name = document.getElementById("name").value;
+  const attending = document.querySelector('input[name="attending"]:checked')?.value;
+
+  if (!name || !attending) {
+    alert("Илтимос, икала майдоникни тулдуринк");
+    return;
+  }
+
+  const params = new URLSearchParams({ name, attending });
+
+  fetch("https://script.google.com/macros/s/AKfycbwFp7uaisZ4yChN2CFFN1w6-DcBsPf6ap7B5OMOOtmoHYhOYMUzgAuwcwqtn9zDpfEW/exec", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/x-www-form-urlencoded"
+  },
+  body: params
+})
+
+  .then(() => {
+    document.getElementById("customForm").style.display = "none";
+    document.getElementById("thankYouMessage").style.display = "block";
+  })
+  .catch(() => alert("Юборишда хатолик юзберди"));
+});
+  const targetDate = new Date("2025-09-20T12:00:00");
+
+  function updateCountdown() {
+    const now = new Date();
+    const diff = targetDate - now;
+
+    if (diff <= 0) {
+      document.getElementById("countdown").innerText = "To‘y allaqachon boshlandi! Shoshiling!";
+      return;
+    }
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((diff / (1000 * 60)) % 60);
+    const seconds = Math.floor((diff / 1000) % 60);
+
+    document.getElementById("countdown").innerText =
+      `${days} кун ${hours} соат ${minutes} мин ${seconds} сек`;
+  }
+
+  setInterval(updateCountdown, 1000);
+  updateCountdown();
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+      AOS.init();
+</script>
+</body>
+</html>
